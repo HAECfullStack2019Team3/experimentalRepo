@@ -14,6 +14,7 @@ public class SpringIoQuickstartApplication {
         SpringApplication.run(SpringIoQuickstartApplication.class, args);
     }
 
+    // just a comment to check commit
     @GetMapping("/hello")
     public String hello (@RequestParam(value = "name", defaultValue = "Team3") String name) {
         return String.format("Hello %s!", name);
